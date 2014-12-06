@@ -35,13 +35,7 @@ class MainController{
   }
 
 
-  function agencyForm($f3){
-    $clean = $this->securityCheck($f3->get('POST'));
-    return true;
-  }
-
-
-  function startupForm($f3){
+  function handleForm($f3){
     $clean = $this->securityCheck($f3->get('POST'));
     return true;
   }
