@@ -6,7 +6,8 @@ class MainController{
   }
 
   function home(){
-    echo "HOME";
+    $template = new Template;
+    echo $template->render('layout.htm');
   }
 
   function __destruct(){
