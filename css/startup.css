@@ -1,0 +1,1141 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+.text-muted {
+    color: black;
+	text-align:left;
+    font-weight: 500;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: red;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: red;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+.white {
+	color:white;
+	}
+
+.red {
+	background-color:red;
+	}
+	
+.droite{
+	text-align:right;
+}
+
+section img{
+    margin: 0 auto;
+    }
+
+p {
+	font-family: 'Source Sans Pro', sans-serif; 
+	font-weight: 200;
+    line-height: 1.50;
+}
+
+p {
+    color: black;
+}
+
+h3{
+	font-size:1.2em;
+	text-align:center;
+    margin-top: 10px;
+}
+
+h4{
+	font-size:1.5em;
+	line-height: 1.3;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color:black;	
+}
+
+section{
+    padding-bottom: 100px;   
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-red {
+    background-color: red;
+}
+
+.bg-light-gray {
+    background-color: #444445;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: red;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: red;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #c70505;
+    color: #fff;
+    background-color: #c70505;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: red;
+    background-color: red;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: red;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    background-color: red;
+    margin-top: 25px;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    /*border-color: #c70505;*/
+    color: #fff;
+    background-color: #c70505;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.btn-lg {
+    border-color: red;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: red;
+}
+
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active,
+.btn-lg.active,
+.open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #444445;
+}
+
+/*______________________MODAL_______________________*/
+
+.modal-header{
+    text-align: center;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color:black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-body .texte{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 1.2em;
+    color: white;
+    margin-top: 25px;
+    padding: 25px 20px;
+}
+
+.modal-body a{
+    text-decoration: none;
+}
+
+.modal-body a:hover,
+.modal-body a:focus {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.modal-body>.active>a {
+    border-bottom: 3px solid red;
+    color: red;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;    
+}
+
+.modal-body>.active>a:hover,
+.modal-body>.active>a:focus {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: red;
+}
+
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: red;
+    background-color: red;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: red;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    border-bottom: 3px solid #c70505;
+    color: red;
+    border-color: #c70505;
+    color: red;
+   /* background-color: #c70505;*/
+}
+
+.navbar-default .nav li.inscription a:hover,
+.navbar-default .nav li.inscription a:focus {
+    border-bottom: 3px solid #c70505;
+    color: red;
+    border-color: #c70505;
+    color: white;
+    background-color: #c70505;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-bottom: 3px solid #c70505;
+    color: red;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;    
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: red;
+}
+
+
+@media(min-width:768px) {
+.navbar-default {
+     padding: 25px 0;
+     border: 0;
+     background-color: transparent;
+     -webkit-transition: padding .3s;
+     -moz-transition: padding .3s;
+     transition: padding .3s;
+}
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default {
+        padding: 10px 0;
+        background: rgba(0,0,0,.7);
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+header {
+    background-image: url(../img/home_sup.jpg);
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header .intro-text {
+    padding-top: 160px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 320px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+
+section#aacc2 {
+    margin-top: 100px;
+}
+	
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+	text-decoration:underline;
+	text-align:center;
+    text-transform: none;
+}
+
+section h3.section-subheading {
+    text-transform: none;
+    font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+    font-size: 14px;
+	color:white;
+}
+
+#services{
+    background-color: red;
+}
+
+
+.bloc-concept{
+    margin-top: 10%;
+    padding: 0;
+    margin-right: -5%;
+}
+
+#services img {
+	margin-top:-150px;
+	padding-bottom:-150px;
+}		
+
+#pam{
+	height:300px;	
+	margin-top:70px;
+}
+
+#pam .titre-pam{
+	 font-family: 'Source Sans Pro', sans-serif;
+	 font-weight: 900;
+	 font-size:100px;
+	 text-align:center;
+	 padding-top:190px;
+	 letter-spacing:10px; 
+}
+
+#pam2 .portfolio_item .portfolio-hover-content p{
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 600;
+   color: white;
+   font-size: 16px;
+}
+
+
+.border {
+	border: 3px solid red;
+	text-align:center;
+	margin-top:-40px;
+}
+	
+.bande-red{
+	border:10px solid;
+	color:red;
+}
+	
+@media(max-width:992px) {
+    #global-portfolio{
+        margin-top: 0;
+    }
+}
+
+
+#startup .bande-red2{
+	border:30px solid;
+	color:red;
+	margin-top:30px;
+}	
+
+.chronologie{
+	margin-top:80px;
+	}	
+
+.titre-blanc{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: white;
+    text-align: center;
+    background-color: gray;
+    padding: 50px 32px;
+    margin-top: 0;
+}
+
+.titre-red{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: white;
+    text-align: center;
+    background-color: red;
+    padding: 50px 28px;
+    margin-top: 0;
+}
+
+.titre-portfolio-red{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: white;
+    background-color: red;
+    padding: 50px 13px;
+    margin-top: 0;
+}
+
+.titre-jury{
+    padding:50px 4px;
+    float: none;
+}
+
+.titre{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 50px 38px;
+    margin-top:-2px;
+}
+
+@media(max-width:992px) {
+    .titre-portfolio-red,
+    .titre-red,
+    .titre-blanc,
+    .titre-jury,
+    .titre
+     {
+        padding: 15px 0;
+    }
+}
+
+
+section #real{
+    margin: 0;
+}
+
+section#collab,
+section#saison3,
+section#ambassadeurs {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    color: white;
+}
+
+section#saison3 {
+    padding: 115px 25px 108px 25px;
+}
+
+section#collab{
+    padding: 84px 25px 124px 25px;
+}
+
+section#ambassadeurs{
+    padding: 115px 25px 80px 25px;
+}
+
+section#ambassadeurs p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+}
+
+section#ambassadeurs-2 {
+     padding-bottom: 0;
+}
+
+section#ambassadeurs-2 .nom_agences{
+    margin-top: -467px;
+    position: relative;
+}
+
+.nom_agences_left h3 p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: red;
+    text-transform: uppercase;   
+}
+
+#ambassadeurs-2 .nom_agences_left p {
+   text-align: right;
+}
+#ambassadeurs-2 .nom_agences_right p {
+   text-align: left;
+}
+
+.nom_agences_left h3 {
+    text-align: right;
+    color: red;
+    font-weight: 600;
+}
+
+.nom_agences_right h3 {
+    text-align: left;
+    color: red;
+    font-weight: 600;
+}
+
+section#visuels_ambassadeurs{
+    margin-top: -295px;
+    z-index: 1000;
+    position: relative;
+}
+
+
+
+@media(max-width:992px) {
+    section#ambassadeurs-2 .nom_agences{
+    margin-top: 0px;
+}
+
+section#visuels_ambassadeurs{
+    margin-top: 0px;
+    z-index: 1000;
+    /*position: relative;*/
+}
+
+}
+
+
+#saison3 img{
+    margin-top: 90px;
+}
+
+section #udecam{
+    padding-bottom: 0;
+}
+
+#udecam .nb p{
+    margin-top: 15px;
+}
+
+#startup .btn{
+    margin-top: 90px;
+}
+
+#startup img{
+    margin-top: 50px;   
+}
+
+@media(max-width:992px) {
+    section#collab,
+    section#saison3
+     {
+       padding: 15px 0 15px 0 ;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+#process .titre-process {
+    margin-bottom: -184px;
+}
+@media(max-width:992px) {
+    #process .titre-process
+     {
+        margin-bottom: 0;
+    }
+}
+
+#process2{
+    margin-top: -75px;
+}
+
+p.saisons{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: left;
+    color: red;
+}
+
+#process2 .chiffres{
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+#process2 h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	text-align:center;
+	color:white;
+	text-transform:uppercase;
+	margin-top:-78px;
+}
+
+#global-portfolio{
+    margin-top: 50px;
+}
+
+#portfolio{
+    background-color: #d7d7d7;
+    padding-bottom: 25px;
+}
+
+#portfolio .portfolio-item,
+#cannes .portfolio-item
+{
+    right: 0;
+    margin: 100px 0 15px;
+}
+
+#pam2 .portfolio-item{
+    right: 0;
+    margin: 50px 0 5px;
+}
+
+#portfolio .portfolio-item .portfolio-link,
+#cannes .portfolio-item .portfolio-link,
+#pam2 .portfolio-item .portfolio-link{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover,
+#cannes .portfolio-item .portfolio-link .portfolio-hover, 
+#pam2 .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255,0,0,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover,
+#cannes .portfolio-item .portfolio-link .portfolio-hover:hover,
+#pam2 .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content,
+#cannes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content, 
+#pam2 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i,
+#cannes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i,
+#pam2 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i
+ {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
+#cannes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#cannes .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4,
+#pam2 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#pam2 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption,
+#cannes .portfolio-item .portfolio-caption,
+#pam2 .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4,
+#cannes .portfolio-item .portfolio-caption h4,
+#pam2 .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p,
+#cannes .portfolio-item .portfolio-caption p,
+#pam2 .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#real {
+   background-color: #d7d7d7;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 50px 0 30px;
+    }
+}
+
+@media(max-width:992px) {
+    #real{
+       padding-bottom: 0px;
+    }
+}
+
+
+#pitchs h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: -458px;
+
+}
+
+#team .titre-real{
+    padding:50px 4px;   
+}
+#team .vignettereal{
+    z-index: 5;
+}
+
+#team img.real{
+	margin-top:-80px;
+	position:relative;
+	z-index:20;
+}
+
+#team .realtop{
+	margin-top:20px;
+}
+
+#team .realbottom{
+	margin-top:-85px;
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p{
+    text-align: left;
+}
+
+#partenaires{
+    background-color: #d7d7d7;
+    margin-top: 50px;
+}
+
+#partenaires .logos{
+    margin-top: 25px;
+}
+
+#partenaires h3{
+    margin-top: 30px;
+    font-size:20px; 
+}
+
+footer section {
+    padding-bottom: 50px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+	/*margin-top: 15px;*/
+}
+
+.contacts img{
+    margin-bottom: 15px;
+}
+
+img.udecam{
+    margin-left: 20px;
+
+}
+
+ul.social-buttons li a i {
+    padding-top: 5px;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 20px;
+   /* line-height: 45px;*/
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: red;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+
+/*-------------------*/
+::-moz-selection {
+    text-shadow: none;
+    background: red;
+}
+
+::selection {
+    text-shadow: none;
+    background: red;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #fed136;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*-----------------FORM--------------*/
+.text-form{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size:14px;
+    color:#303030;
+    text-align:left;
+}
+
+.titre-form{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size:16px;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+
+.titre-form-bande{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size:15px;
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+
+.bande-form{
+    background-color:red;
+    margin-bottom:20px;
+    padding-top:8px;
+}

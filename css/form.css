@@ -1,0 +1,38 @@
+.text-form{
+	font-family: 'futura_md_btmedium';
+	font-size:14px;
+	color:#303030;
+	text-align:center;
+}
+
+.form-italic{
+	font-family: 'futura_lt_btlight_italic';
+	font-size:13px;
+	color:#303030;
+	text-align:center;
+	
+}
+
+.titre-form{
+	font-family: 'futura_md_btmedium';
+	font-size:15px;
+	color:#303030;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
+.titre-form-bande{
+	font-family: 'futura_md_btmedium';
+	font-size:15px;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
+.bande-form{
+	background-color:#303030;
+	margin-bottom:20px;
+	padding-top:8px;
+}
