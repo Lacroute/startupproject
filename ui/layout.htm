@@ -4,11 +4,25 @@
 		<meta charset="<?php echo $ENCODING; ?>" />
 		<title>Powered by <?php echo $PACKAGE; ?></title>
 		<base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
+		<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css" />
 		<link rel="stylesheet" href="ui/css/base.css" type="text/css" />
 		<link rel="stylesheet" href="ui/css/theme.css" type="text/css" />
-		<link rel="stylesheet" href="lib/code.css" type="text/css" />
+		<link rel="stylesheet" href="ui/css/old.css" type="text/css" />
+	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css' />
 	</head>
-	<body>
-		<?php echo $this->render(Base::instance()->get('content')); ?>
+	<body id="page-top" class="index">
+		<include href="main.htm" />
 	</body>
+
+	<script src="/vendor/modernizr/modernizr.js"></script>
+
+	<script src="/vendor/jquery/jquery.js"></script>
+	<script src="/vendor/jquery-validation/dist/jquery.validate.js"></script>
+	<script src="/vendor/jquery-validation/dist/additional-methods.js"></script>
+
+	<script src="/vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
+
+	<script src="/ui/js/agency.js"></script>
+	<!-- <script src="/minify/js?&files=agency.js"></script> -->
+
 </html>
