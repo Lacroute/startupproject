@@ -1,4 +1,3 @@
-
 $(function(){
 
     $('a.page-scroll').bind('click', function(event) {
@@ -12,7 +11,7 @@ $(function(){
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top'
-    })
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -101,4 +100,4 @@ $(function(){
         require_from_group: "Veuillez fournir au moins {0} de ces champs."
     });
 
-})
+});

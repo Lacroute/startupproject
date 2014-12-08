@@ -154,6 +154,14 @@ class MainController{
     return true;
   }
 
+  function minify($f3, $args){
+    $files = explode(',', $_GET['files']);
+    $concatFiles = '';
+    foreach ($files as $key => $file) {
+      $concatFiles .= Web::instance()->minify(DIRECTORY_SEPARATOR.$args['type'].DIRECTORY_SEPARATOR.$file);
+    }
+    echo $concatFiles;
+  }
 
   function __destruct(){
 
