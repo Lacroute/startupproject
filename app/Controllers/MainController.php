@@ -145,6 +145,8 @@ class MainController{
     $mapper->secteur_2 = $clean['secteur_2'];
     $mapper->secteur_1_autre = $clean['secteur_1_autre'];
     $mapper->secteur_2_autre = $clean['secteur_2_autre'];
+    $mapper->secteur_3 = $clean['secteur_3'];
+    $mapper->internet = $clean['internet'];
     $mapper->CG = $clean['CG'];
 
     $mapper->insert();
@@ -157,7 +159,9 @@ class MainController{
     $files = explode(',', $_GET['files']);
     $concatFiles = '';
     foreach ($files as $key => $file) {
-      $concatFiles .= Web::instance()->minify(DIRECTORY_SEPARATOR.$args['type'].DIRECTORY_SEPARATOR.$file);
+      $concatFiles .= Web::instance()->minify(
+        DIRECTORY_SEPARATOR.$args['type'].DIRECTORY_SEPARATOR.$file
+      );
     }
     echo $concatFiles;
   }
