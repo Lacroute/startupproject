@@ -149,16 +149,54 @@ class MainController{
     $mapper->nbre_places = $clean['nbre_places'];
     $mapper->accueil = $clean['accueil'];
     $mapper->dispo = $clean['dispo'];
-    $mapper->secteur_1 = $clean['secteur_1'];
-    $mapper->secteur_2 = $clean['secteur_2'];
-    $mapper->secteur_1_autre = $clean['secteur_1_autre'];
-    $mapper->secteur_2_autre = $clean['secteur_2_autre'];
-    $mapper->secteur_3 = $clean['secteur_3'];
-    $mapper->internet = $clean['internet'];
-    $mapper->CG = $clean['CG'];
+    // secteur_1
+    if(isset($clean['tourisme'])){
+      $mapper->tourisme = $clean['tourisme'];
+    }
+    if(isset($clean['gaming'])){
+      $mapper->gaming = $clean['gaming'];
+    }
+    if(isset($clean['musique'])){
+      $mapper->musique = $clean['musique'];
+    }
+    if(isset($clean['media'])){
+      $mapper->media = $clean['media'];
+    }
+    if(isset($clean['mobilite'])){
+      $mapper->mobilite = $clean['mobilite'];
+    }
+    if(isset($clean['secteur_1_autre'])){
+      $mapper->secteur_1_autre = $clean['secteur_1_autre'];
+    }
+    
+    // secteur_2
+    if(isset($clean['crm'])){
+      $mapper->CRM = $clean['crm'];
+    }
+    if(isset($clean['data'])){
+      $mapper->Data = $clean['data'];
+    }
+    if(isset($clean['creation'])){
+      $mapper->Création = $clean['creation'];
+    }
+    if(isset($clean['gestion'])){
+      $mapper->Gestion = $clean['gestion'];
+    }
+    if(isset($clean['analyse'])){
+      $mapper->Analyse = $clean['analyse'];
+    }
+    if(isset($clean['campagnes'])){
+      $mapper->Campagne = $clean['campagnes'];
+    }
+    if(isset($clean['secteur_2_autre'])){
+      $mapper->secteur_2_autre = $clean['secteur_2_autre'];
+    }
 
-    var_dump($mapper);
-    // $mapper->insert();
+    $mapper->secteur_3 = $clean['secteur_3'];
+    $mapper->interet = $clean['interet'];
+    $mapper->date_inscription = date('Y-m-d', time());
+
+    $mapper->insert();
     $mapper = null;
     
     return true;

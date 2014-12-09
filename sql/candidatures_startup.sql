@@ -66,7 +66,6 @@ CREATE TABLE IF NOT EXISTS `candidatures_startup` (
   `buisnessplan` text NOT NULL,
   `description_GP` text NOT NULL,
   `link` varchar(250) NOT NULL,
-  `CG` int(1) NOT NULL DEFAULT '0',
   `date_inscription` date NOT NULL,
   `cap_digital_member` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
