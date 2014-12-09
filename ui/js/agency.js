@@ -1,4 +1,3 @@
-
 $(function(){
 
     $('a.page-scroll').bind('click', function(event) {
@@ -12,13 +11,93 @@ $(function(){
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top'
-    })
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
 
+    $('#myModal').on('show.bs.modal', function(){
+        $this = $(this)
+        $this.find('#RS').val('SARL');
+        $this.find('#nom_com').val('Dataveyes');
+        $this.find('#date').val(Date.now());
+        $this.find('#siret').val('24567890984432');
+        $this.find('#nature').val('SA');
+        $this.find('#site').val('http://www.dataveyes.com');
+        $this.find('#description').val('C est nous les rois de la data');
+        $this.find('#rep_prenom').val('Arnaud');
+        $this.find('#rep_nom').val('Pichon');
+        $this.find('#adresse').val('24 rue de la rue');
+        $this.find('#ville').val('Pantin');
+        $this.find('#cp').val(93290);
+        $this.find('#contact_prenom').val('contact_prenom');
+        $this.find('#contact_nom').val('contact_nom');
+        $this.find('#contact_email').val('contact@ema.il');
+        $this.find('#contact_tel').val(0855683910);
+        $this.find('#techno').val('techno');
+        $this.find('#innovation').val('innovation');
+        $this.find('#atout').val('atout');
+        $this.find('#domaine_autre').val('domaine_autre');
+        $this.find('#marche').val('marche');
+        $this.find('#buisnessplan').val('buisnessplan');
+        $this.find('#equipe').val('equipe');
+        $this.find('#effectif').val('effectif');
+        $this.find('#CA_2012').val('CA_2012');
+        $this.find('#CA_2013').val('CA_2013');
+        $this.find('#CA_2014').val('CA_2014');
+        $this.find('#CAE_2012').val('CAE_2012');
+        $this.find('#CAE_2013').val('CAE_2013');
+        $this.find('#CAE_2014').val('CAE_2014');
+        $this.find('#EBE_2012').val('EBE_2012');
+        $this.find('#EBE_2013').val('EBE_2013');
+        $this.find('#EBE_2014').val('EBE_2014');
+        $this.find('#description_GP').val('description_GP');
+        $this.find('#link').val('http://www.dataveyes.com');
+    });
+
+    $('#myModal_agence').on('show.bs.modal', function(){
+        $this = $(this)
+        $this.find("#nom").val('nom');
+        $this.find("#date").val(Date.now());
+        $this.find("#effectif").val('effectif');
+        $this.find("#RCS").val('RCS');
+        $this.find("#site").val('site');
+        $this.find("#email").val('contact@ema.il');
+        $this.find("#adresse").val('adresse');
+        $this.find("#adresse").val('adresse');
+        $this.find("#ville").val('ville');
+        $this.find("#cp").val('cp');
+        $this.find("#dir_nom").val('dir_nom');
+        $this.find("#dir_prenom").val('dir_prenom');
+        $this.find("#dir_fonction").val('dir_fonction');
+        $this.find("#dir_email").val('contact@ema.il');
+        $this.find("#dir_tel").val(0855683910);
+        $this.find("#mentor_nom").val('mentor_nom');
+        $this.find("#mentor_prenom").val('mentor_prenom');
+        $this.find("#mentor_fonction").val('mentor_fonction');
+        $this.find("#mentor_email").val('contact@ema.il');
+        $this.find("#mentor_tel").val(0855683910);
+        $this.find("#nbre_places").val(132);
+        $this.find("#dispo").val('04');
+        $this.find("#secteur_1").val('secteur_1');
+        $this.find("#secteur_1").val('secteur_1');
+        $this.find("#secteur_1").val('secteur_1');
+        $this.find("#secteur_1").val('secteur_1');
+        $this.find("#secteur_1").val('secteur_1');
+        $this.find("#secteur_1_autre").val('secteur_1_autre');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2").val('secteur_2');
+        $this.find("#secteur_2_autre").val('secteur_2_autre');
+        $this.find("#secteur_3").val('secteur_3');
+        $this.find("#interet").val('interet');
+        $this.find("#CG").val('CG');
+    });
     var cbpAnimatedHeader = (function() {
 
         var docElem = document.documentElement,
@@ -101,4 +180,4 @@ $(function(){
         require_from_group: "Veuillez fournir au moins {0} de ces champs."
     });
 
-})
+});

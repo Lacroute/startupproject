@@ -687,63 +687,25 @@
     </div>
 </div>
 
-
 <!-- Portfolio Modal 6 -->
 <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="modal-body">
-                        <h2>QUI ÊTES-VOUS ?</h2>
-                        
-                            <div class="col-md-12 texte center">
-                              <a data-toggle="modal" href="#myModal" data-toggle="modal">
-                            <button type="button" class="btn btn-xl"> Vous êtes une startup ?</button>
-                              </a> 
-                            </div>
-
-                            <div class="col-md-12 texte center">
-                              <a data-toggle="modal" href="#myModal_agence" data-toggle="modal">
-                              <button type="button" class="btn btn-xl"> Vous êtes une agence ?</button>
-                              </a> 
-                         </div>
-                   </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <include href="templates/popup.htm" />
 </div>
 
 <!-- Modal HTML -->
+
 <div id="myModal" class="modal fade">
     <div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <include href="templates/startup_form.htm" />
+            </div>
         </div>
-        <div class="modal-body">
-            <?php
-                 // Si le formulaire a été soumis on effectue le traitement
-
-                if(isset($_GET['action']) && $_GET['action']=='candidatures' ){
-                   // affichera les événtuels erreurs de la validation PHP
-                   include('inscription_form.php');
-                }else{
-                    include('form.php'); 
-                }
-            ?>
-        </div>
-      </div>
    </div>
 </div>
-
 
   <!-- Modal HTML -->
 <div id="myModal_agence" class="modal fade">
@@ -753,17 +715,9 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
-            <?php
-                // Si le formulaire a été soumis on effectue le traitement
-                if(isset($_GET['action']) && $_GET['action']=='candidatures_agence' ){
-                    // affichera les événtuels erreurs de la validation PHP
-                    include('inscription_agence.php');
-                }else{
-                    include('form_agence.php'); 
-                }
-                ?>
+                <include href="templates/agency_form.htm" />
             </div>
-      </div>
+        </div>
     </div>
 </div>
 
