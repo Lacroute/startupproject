@@ -24,6 +24,26 @@ class MainController{
     return $db;
   }
 
+  function fileUpload($folder, $filename, $video){
+
+    $allowedExts  = array("ppt", "pdf", "jpg", "jpeg", "gif", "mp4", "wma", "avi");
+    $allowedTypes = array("application/vnd.ms-powerpoint", "application/pdf", "image/pjpeg", "image/jpeg", "image/gif", "video/mp4", "audio/wma", "video/avi");
+    $extension   = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+
+    if ($_FILES["file"]["size"] < 15000) {
+      throw new Exception("Error: Filesize over 15Mo");
+    }
+
+    if (in_array($_FILES["file"]["type"], $allowedTypes) && in_array($extension, $allowedExts)) {
+      if ($_FILES["file"]["error"] > 0) {
+        throw new Exception("Upload error : ".$_FILES["file"]["error"]);
+      } else {
+        move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $folder . "/" . $filename . time() . '.' . $extension);
+      }
+    } else {
+      echo "Invalid file";
+    }
+  }
 
   function displayForm($f3, $params){
     $type =F3::get('GET')['type'];
