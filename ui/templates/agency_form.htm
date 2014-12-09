@@ -24,15 +24,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
 
         <div class="form-group">
             <label for="date" class="col-md-3 text-form"> Date de création de l'agence* </label>
-            <div class="col-md-2">
-                <input type="text" class="form-control day" name="ag_date_Jour" placeholder="JJ" required >
-            </div> 
-            <div class="col-md-2">
-                <input type="text" class="form-control month" name="ag_date_Mois" placeholder="MM" required>
-            </div>
-            <div class="col-md-2">
-                <input type="text" class="form-control year" name="ag_date_Annee" placeholder="AAAA" required>
-            </div>
+            <input type="date" name="date">
         </div>
 
         <div class="form-group">
@@ -110,7 +102,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         <div class="form-group">
             <label for="dir_tel" class="col-md-3 text-form">Mobile</label>
             <div class="col-md-4">
-                <input type="tel" class="form-control" name="dir_tel" placeholder="Mobile" required>
+                <input type="tel" class="form-control" id="dir_tel" name="dir_tel" placeholder="Mobile" required>
             </div>
         </div>
 
@@ -131,7 +123,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         <div class="form-group">
             <label class="col-md-3 text-form"> Fonction du mentor</label>
             <div class="col-md-4">
-                <input type="text" class="form-control" id="ag_mentor_fonction" name="mentor_fonction" placeholder="Fonction du mentor" required />
+                <input type="text" class="form-control" id="mentor_fonction" name="mentor_fonction" placeholder="Fonction du mentor" required />
             </div>
         </div>
 
@@ -156,7 +148,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         <div class="form-group">
             <label class="col-md-3 text-form"  for="nbre_places"> Nombre de places disponibles</label>
             <div class="col-md-2">
-                <input type="text"  data-type="input-textbox" class="form-control" id="nbre-places" name="nbre-places" required />
+                <input type="number"  data-type="input-textbox" class="form-control" id="nbre_places" name="nbre_places" required />
             </div>
         </div>
 
@@ -315,7 +307,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         <div class="col-md-12">
             <div class="form-actions">
                 <label class="checkbox inline"> 
-                    <input type="checkbox" class="form-checkbox" id="CG" name="CG" value="1" />
+                    <input type="checkbox" class="form-checkbox" id="CG" name="CG" value="1" required/>
                         Les participants autorisent les organisateurs du concours AACC Cap Digital Start-up Project à publier tout ou partie des informations contenues dans le formulaire dans une publication unique présentant les candidatures pré-sélectionnées de ce concours.<br>
                         Les participants s’engagent dans le cas où ils sont retenus à communiquer à l’AACC et CAP DIGITAL les éventuelles évolutions du projet, le changement du mentor en cours de programme.
                 </label>

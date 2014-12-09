@@ -62,53 +62,58 @@ class MainController{
 
   function handleStartupForm($f3){
     $clean = $this->securityCheck($f3->get('POST'));
+    var_dump($clean);
+    die('kouk');
     $mapper = new DB\SQL\Mapper($this->initDB(),'candidatures_startup');
-
-    $mapper->RS = $clean['RS'];
-    $mapper->nom = $clean['nom'];
-    $mapper->siret = $clean['siret'];
-    $mapper->domaine = $clean['domaine'];
-    $mapper->nature = $clean['nature'];
-    $mapper->domaine_autre = $clean['domaine_autre'];
-    $mapper->rep_prenom = $clean['rep_prenom'];
-    $mapper->rep_nom = $clean['rep_nom'];
-    $mapper->adresse = $clean['adresse'];
-    $mapper->ville = $clean['ville'];
-    $mapper->cp = $clean['cp'];
-    $mapper->contact_nom = $clean['contact_nom'];
-    $mapper->contact_prenom = $clean['contact_prenom'];
-    $mapper->contact_email = $clean['contact_email'];
-    $mapper->contact_tel = $clean['contact_tel'];
-    $mapper->site = $clean['site'];
-    $mapper->date = $clean['date'];
-    $mapper->effectif = $clean['effectif'];
-    $mapper->equipe = $clean['equipe'];
-    $mapper->CA_2012 = $clean['CA_2012'];
-    $mapper->CA_2013 = $clean['CA_2013'];
-    $mapper->CA_2014 = $clean['CA_2014'];
-    $mapper->EBE_2012 = $clean['EBE_2012'];
-    $mapper->EBE_2013 = $clean['EBE_2013'];
-    $mapper->EBE_2014 = $clean['EBE_2014'];
-    $mapper->CAE_2012 = $clean['CAE_2012'];
-    $mapper->CAE_2013 = $clean['CAE_2013'];
-    $mapper->CAE_2014 = $clean['CAE_2014'];
-    $mapper->description = $clean['description'];
-    $mapper->techno = $clean['techno'];
-    $mapper->innovation = $clean['innovation'];
-    $mapper->etat = $clean['etat'];
-    $mapper->atout = $clean['atout'];
-    $mapper->marche = $clean['marche'];
-    $mapper->buisnessplan = $clean['buisnessplan'];
-    $mapper->description_GP = $clean['description_GP'];
-    $mapper->link = $clean['link'];
-    $mapper->CG = $clean['CG'];
-    $mapper->date_inscription = $clean['date_inscription'];
-    $mapper->valid = $clean['valid'];
-    $mapper->comment = $clean['comment'];
-    $mapper->whish = $clean['whish'];
-    $mapper->startup = $clean['startup'];
     
-    $mapper->insert();
+    $mapper->RS               = $clean['RS'];
+    $mapper->nom              = $clean['nom'];
+    $mapper->siret            = $clean['siret'];
+    $mapper->domaine          = $clean['domaine'];
+    $mapper->nature           = $clean['nature'];
+    $mapper->domaine_autre    = $clean['domaine_autre'];
+    $mapper->rep_prenom       = $clean['rep_prenom'];
+    $mapper->rep_nom          = $clean['rep_nom'];
+    $mapper->adresse          = $clean['adresse'];
+    $mapper->ville            = $clean['ville'];
+    $mapper->cp               = $clean['cp'];
+    $mapper->contact_nom      = $clean['contact_nom'];
+    $mapper->contact_prenom   = $clean['contact_prenom'];
+    $mapper->contact_email    = $clean['contact_email'];
+    $mapper->contact_tel      = $clean['contact_tel'];
+    $mapper->site             = $clean['site'];
+    $mapper->date             = $clean['date'];
+    $mapper->effectif         = $clean['effectif'];
+    $mapper->equipe           = $clean['equipe'];
+    $mapper->CA_2012          = $clean['CA_2012'];
+    $mapper->CA_2013          = $clean['CA_2013'];
+    $mapper->CA_2014          = $clean['CA_2014'];
+    $mapper->EBE_2012         = $clean['EBE_2012'];
+    $mapper->EBE_2013         = $clean['EBE_2013'];
+    $mapper->EBE_2014         = $clean['EBE_2014'];
+    $mapper->CAE_2012         = $clean['CAE_2012'];
+    $mapper->CAE_2013         = $clean['CAE_2013'];
+    $mapper->CAE_2014         = $clean['CAE_2014'];
+    $mapper->description      = $clean['description'];
+    $mapper->techno           = $clean['techno'];
+    $mapper->innovation       = $clean['innovation'];
+    $mapper->etat             = $clean['etat'];
+    $mapper->atout            = $clean['atout'];
+    $mapper->marche           = $clean['marche'];
+    $mapper->buisnessplan     = $clean['buisnessplan'];
+    $mapper->description_GP   = $clean['description_GP'];
+    $mapper->link             = $clean['link'];
+    $mapper->CG               = $clean['CG'];
+    $mapper->date_inscription = new DateTime();
+    $mapper->valid            = $clean['valid'];
+    $mapper->comment          = $clean['comment'];
+    $mapper->whish            = $clean['whish'];
+    $mapper->startup          = $clean['startup'];
+    
+    // domaine_creation, domaine_analyse, domaine_campagnes
+
+    var_dump($mapper);
+    // $mapper->insert();
     $mapper = null;
         
     return true;
@@ -149,7 +154,8 @@ class MainController{
     $mapper->internet = $clean['internet'];
     $mapper->CG = $clean['CG'];
 
-    $mapper->insert();
+    var_dump($mapper);
+    // $mapper->insert();
     $mapper = null;
     
     return true;
