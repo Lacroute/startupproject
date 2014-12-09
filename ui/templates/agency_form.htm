@@ -49,7 +49,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         </div>
             
        <div class="form-group">
-            <label for="email" class="col-md-3 text-form">Email</label>
+            <label for="email" class="col-md-3 text-form">Email*</label>
             <div class="col-md-4">
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required >
             </div>
@@ -93,14 +93,14 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         </div>
 
         <div class="form-group">
-            <label for="dir_email" class="col-md-3 text-form">Email</label>
+            <label for="dir_email" class="col-md-3 text-form">Email*</label>
             <div class="col-md-4">
                 <input type="email" class="form-control" id="dir_email" name="dir_email" placeholder="Email" required >
             </div>
         </div>
 
         <div class="form-group">
-            <label for="dir_tel" class="col-md-3 text-form">Mobile</label>
+            <label for="dir_tel" class="col-md-3 text-form">Mobile*</label>
             <div class="col-md-4">
                 <input type="tel" class="form-control" id="dir_tel" name="dir_tel" placeholder="Mobile" required>
             </div>
@@ -111,7 +111,7 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         </div>  
 
         <div class="form-group">
-            <label for="mentor_nom" class="col-md-3 text-form"> Nom / Prénom du mentor</label>
+            <label for="mentor_nom" class="col-md-3 text-form">Nom / Prénom du mentor*</label>
             <div class="col-md-4">
                 <input type="text" class="form-control" id="mentor_nom" name="mentor_nom" placeholder="Nom du mentor" required />
             </div>
@@ -121,21 +121,21 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 text-form"> Fonction du mentor</label>
+            <label class="col-md-3 text-form">Fonction du mentor*</label>
             <div class="col-md-4">
                 <input type="text" class="form-control" id="mentor_fonction" name="mentor_fonction" placeholder="Fonction du mentor" required />
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 text-form">Email</label>
+            <label class="col-md-3 text-form">Email*</label>
             <div class="col-md-4">
                 <input type="email" class="form-control" id="mentor_email" name="mentor_email" placeholder="Email" required >
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 text-form">Mobile</label>
+            <label class="col-md-3 text-form">Mobile*</label>
             <div class="col-md-4">
                 <input type="tel" class="form-control" name="mentor_tel" id="mentor_tel" placeholder="Mobile" required>
             </div>
@@ -146,29 +146,29 @@ C'est initier de véritables promotions de startups et faire naître une pépini
         </div> 
 
         <div class="form-group">
-            <label class="col-md-3 text-form"  for="nbre_places"> Nombre de places disponibles</label>
+            <label class="col-md-3 text-form"  for="nbre_places"> Nombre de places disponibles*</label>
             <div class="col-md-2">
                 <input type="number"  data-type="input-textbox" class="form-control" id="nbre_places" name="nbre_places" required />
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 text-form"> Accueil </label>
+            <label class="col-md-3 text-form">Accueil*</label>
             <div class="col-md-3">
                 <label class="checkbox inline"> 
-                    <input type="checkbox"  name="accueil" value="permanent" /> permanent
+                    <input type="radio"  name="accueil" value="permanent" /> permanent
                 </label>
             </div>
 
             <div class="col-md-3">
                 <label class="checkbox inline">
-                    <input type="checkbox"  name="accueil" value="temporaire" /> temporaire
+                    <input type="radio"  name="accueil" value="temporaire" /> temporaire
                 </label>
             </div>
         </div>
 
         <div class="form-group">
-            <label class="col-md-3 text-form"> Nombre de jours par semaine</label>
+            <label class="col-md-3 text-form">Nombre de jours par semaine*</label>
             <div class="col-md-2">
                 <select  name="dispo" id="dispo" class="form-control" required>
                     <option value="01"> 1 </option>
@@ -193,31 +193,31 @@ C'est initier de véritables promotions de startups et faire naître une pépini
                 <div class="col-md-12">
                     <div class="col-md-4">
                         <label class="checkbox inline"> 
-                            <input type="checkbox" name="secteur_1" id="secteur_1" value="tourisme" /> Tourisme
+                            <input type="checkbox" name="tourisme" id="tourisme" value="1" /> Tourisme
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_1" id="secteur_1" value="gaming" /> Gaming
+                            <input type="checkbox" name="gaming" id="gaming" value="1" /> Gaming
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_1" id="secteur_1" value="musique" /> Musique
+                            <input type="checkbox" name="musique" id="musique" value="1" /> Musique
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_1" id="secteur_1" value="media/loisirs" /> Médias/loisirs
+                            <input type="checkbox" name="media" id="media" value="1" /> Médias/loisirs
                         </label>
                     </div>
 
                     <div class="col-md-4">  
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_1" id="secteur_1" value="mobilite et ville durable" /> Mobilité et ville durable
+                            <input type="checkbox" name="mobilite" id="mobilite" value="1" /> Mobilité et ville durable
                         </label>
                     </div>
 
@@ -239,37 +239,37 @@ C'est initier de véritables promotions de startups et faire naître une pépini
                 <div class="col-md-12">
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="CRM" /> CRM
+                            <input type="checkbox" name="crm" id="crm" value="1"> CRM
                         </label>
                     </div>
 
                     <div class="col-md-4">  
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="Data Visualisation" /> Data Visualisation
+                            <input type="checkbox" name="data" id="data" value="1" /> Data Visualisation
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="Création : outil/service à destination des équipes de l’agence" /> Création : outil/service à destination des équipes de l’agence (ex. CRM, contenu interactif)
+                            <input type="checkbox" name="creation" id="creation" value="1" /> Création : outil/service à destination des équipes de l’agence (ex. CRM, contenu interactif)
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="Gestion de campagnes en ligne" /> Gestion de campagnes en ligne (marketing relationnel, RTB,…)
+                            <input type="checkbox" name="gestion" id="gestion" value="1" /> Gestion de campagnes en ligne (marketing relationnel, RTB,…)
                         </label>
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="Analyse du comportement du consommateur" /> Analyse du comportement du consommateur (online et/ou IRL)
+                            <input type="checkbox" name="analyse" id="analyse" value="1" /> Analyse du comportement du consommateur (online et/ou IRL)
                         </label>  
                     </div>
 
                     <div class="col-md-4">
                         <label class="checkbox inline">
-                            <input type="checkbox" name="secteur_2" id="secteur_2" value="Campagnes évènementielles" /> Campagnes évènementielles
+                            <input type="checkbox" name="campagnes" id="campagnes" value="1" /> Campagnes évènementielles
                         </label>  
                     </div>
                 </div>

@@ -44,19 +44,42 @@ CREATE TABLE IF NOT EXISTS `candidatures_agence` (
   `dir_tel` varchar(20) NOT NULL,
   `mentor_nom` varchar(100) NOT NULL,
   `mentor_prenom` varchar(100) NOT NULL,
+  `mentor_fonction` varchar(100) NOT NULL,
   `mentor_email` varchar(250) NOT NULL,
   `mentor_tel` varchar(20) NOT NULL,
   `nbre_places` varchar(20) NOT NULL,
   `accueil` set('permanent','temporaire') NOT NULL,
   `dispo` char(150) NOT NULL,
-  `secteur_1` set('E-commerce','communication/marketing/publicité','nouveaux services','information et communication','mobilité et ville durable','art/patrimoine/tourisme','média/loisirs','éducation/formation') NOT NULL,
-  `secteur_2` set('CRM','Data') NOT NULL,
-  `secteur_1_autre` text NOT NULL,
-  `secteur_2_autre` text NOT NULL,
-  `CG` int(1) NOT NULL DEFAULT '0',
+  `tourisme` varchar(1) NOT NULL DEFAULT '0',
+  `gaming` varchar(1) NOT NULL DEFAULT '0',
+  `musique` varchar(1) NOT NULL DEFAULT '0',
+  `media` varchar(1) NOT NULL DEFAULT '0',
+  `mobilite` varchar(1) NOT NULL DEFAULT '0',
+  `secteur_1_autre` varchar(250) NOT NULL,
+  `crm` varchar(1) NOT NULL DEFAULT '0',
+  `data` varchar(1) NOT NULL DEFAULT '0',
+  `creation` varchar(1) NOT NULL DEFAULT '0',
+  `gestion` varchar(1) NOT NULL DEFAULT '0',
+  `analyse` varchar(1) NOT NULL DEFAULT '0',
+  `campagnes` varchar(1) NOT NULL DEFAULT '0',
+  `secteur_2_autre` varchar(250) NOT NULL,
+  `secteur_3` varchar(250) NOT NULL,
+  `interet` varchar(250) NOT NULL,
+  `date_inscription` date NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+
+
+
+
+
+
+
+
+
