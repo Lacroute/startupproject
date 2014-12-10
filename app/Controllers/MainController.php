@@ -54,7 +54,8 @@ class MainController{
   }
 
   function displayForm($f3, $params){
-    $type =F3::get('GET')['type'];
+    $get = F3::get('GET');
+    $type = $get['type'];
     if($type == "agency"){
       echo Template::instance()->render('templates/agency_form.htm');
     }else{
