@@ -1588,7 +1588,6 @@ class Base extends Prefab {
 			$error && in_array($error['type'],
 			array(E_ERROR,E_PARSE,E_CORE_ERROR,E_COMPILE_ERROR)))
 			// Fatal error detected
-			var_dump($error);
 			$this->error(500,sprintf(self::E_Fatal,$error['message']));
 	}
 
