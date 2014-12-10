@@ -156,7 +156,7 @@ class Mapper extends \DB\Cursor {
 				$this->cursor=$this->cursor->skip($options['offset']);
 			$result=array();
 			while ($this->cursor->hasnext())
-				$result[]=$this->cursor->getnext();
+				array_push($result, $this->cursor->getnext());
 			if ($options['group'])
 				$tmp->drop();
 			if ($fw->get('CACHE') && $ttl)
@@ -165,7 +165,7 @@ class Mapper extends \DB\Cursor {
 		}
 		$out=array();
 		foreach ($result as $doc)
-			$out[]=$this->factory($doc);
+			array_push($out, $this->factory($doc));
 		return $out;
 	}
 

@@ -87,7 +87,7 @@ class Basket {
 					$obj=clone($this);
 					$obj->id=$id;
 					$obj->item=$item;
-					$out[]=$obj;
+					array_push($out, $obj);
 				}
 			return $out;
 		}

@@ -51,7 +51,7 @@ class Test {
 						fixslashes($frame['file']).':'.$frame['line'];
 					break;
 				}
-			$this->data[]=$data;
+			array_push($this->data, $data);
 		}
 		return $this;
 	}

@@ -141,8 +141,8 @@ class SQL extends \PDO {
 				$fw->stringify($arg)).'.sql',$result)) &&
 				$cached[0]+$ttl>microtime(TRUE)) {
 				foreach ($arg as $key=>$val) {
-					$vals[]=$fw->stringify(is_array($val)?$val[0]:$val);
-					$keys[]='/'.(is_numeric($key)?'\?':preg_quote($key)).'/';
+					array_push($vals, $fw->stringify(is_array($val)?$val[0]:$val));
+					array_push($keys, '/'.(is_numeric($key)?'\?':preg_quote($key)).'/');
 				}
 			}
 			elseif (is_object($query=$this->prepare($cmd))) {
@@ -150,15 +150,15 @@ class SQL extends \PDO {
 					if (is_array($val)) {
 						// User-specified data type
 						$query->bindvalue($key,$val[0],$val[1]);
-						$vals[]=$fw->stringify($this->value($val[1],$val[0]));
+						array_push($vals, $fw->stringify($this->value($val[1],$val[0])));
 					}
 					else {
 						// Convert to PDO data type
 						$query->bindvalue($key,$val,
 							$type=$this->type($val));
-						$vals[]=$fw->stringify($this->value($type,$val));
+						array_push($vals, $fw->stringify($this->value($type,$val)));
 					}
-					$keys[]='/'.(is_numeric($key)?'\?':preg_quote($key)).'/';
+					array_push($keys, '/'.(is_numeric($key)?'\?':preg_quote($key)).'/');
 				}
 				$query->execute();
 				$error=$query->errorinfo();
@@ -178,7 +178,7 @@ class SQL extends \PDO {
 							unset($result[$pos]);
 							$result[$pos]=array();
 							foreach ($rec as $key=>$val)
-								$result[$pos][trim($key,'\'"[]`')]=$val;
+								array_push($result[$pos][trim($key,'\'", ')]=$val);
 						}
 					$this->rows=count($result);
 					if ($fw->get('CACHE') && $ttl)

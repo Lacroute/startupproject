@@ -226,7 +226,7 @@ class Mapper extends \DB\Cursor {
 					$this->adhoc[$field]['value']=$val;
 				unset($val);
 			}
-			$out[]=$this->factory($row);
+			array_push($out, $this->factory($row));
 			unset($row);
 		}
 		return $out;
@@ -339,7 +339,7 @@ class Mapper extends \DB\Cursor {
 				$values.=($ctr?',':'').'?';
 				$args[$ctr+1]=array($field['value'],$field['pdo_type']);
 				$ctr++;
-				$ckeys[]=$key;
+				array_push($ckeys, $key);
 			}
 			$field['changed']=FALSE;
 			unset($field);

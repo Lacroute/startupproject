@@ -137,7 +137,7 @@ class SMTP extends Magic {
 			user_error(sprintf(self::E_Attach,$file));
 		if (is_string($alias))
 			$file=array($alias=>$file);
-		$this->attachments[]=$file;
+		array_push($this->attachments, $file);
 	}
 
 	/**

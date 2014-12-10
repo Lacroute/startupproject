@@ -260,14 +260,14 @@ class Mapper extends \DB\Cursor {
 		$out=array();
 		foreach ($data as $id=>&$doc) {
 			unset($doc['_id']);
-			$out[]=$this->factory($id,$doc);
+			array_push($out, $this->factory($id,$doc));
 			unset($doc);
 		}
 		if ($log && isset($args)) {
 			if ($filter)
 				foreach ($args as $key=>$val) {
-					$vals[]=$fw->stringify(is_array($val)?$val[0]:$val);
-					$keys[]='/'.(is_numeric($key)?'\?':preg_quote($key)).'/';
+					array_push($vals, $fw->stringify(is_array($val)?$val[0]:$val));
+					array_push($keys, '/'.(is_numeric($key)?'\?':preg_quote($key)).'/');
 				}
 			$db->jot('('.sprintf('%.1f',1e3*(microtime(TRUE)-$now)).'ms) '.
 				$this->file.' [find] '.
@@ -387,9 +387,9 @@ class Mapper extends \DB\Cursor {
 				array_slice($filter,1,NULL,TRUE);
 			$args=is_array($args)?$args:array(1=>$args);
 			foreach ($args as $key=>$val) {
-				$vals[]=\Base::instance()->
+				array_push($vals, \Base::instance()-)>
 					stringify(is_array($val)?$val[0]:$val);
-				$keys[]='/'.(is_numeric($key)?'\?':preg_quote($key)).'/';
+				array_push($keys, '/'.(is_numeric($key)?'\?':preg_quote($key)).'/');
 			}
 		}
 		$db->jot('('.sprintf('%.1f',1e3*(microtime(TRUE)-$now)).'ms) '.

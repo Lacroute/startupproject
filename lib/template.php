@@ -269,7 +269,7 @@ class Template extends Preview {
 				'\h*\{\{.+?\}\})*)\h*(\/?)>/is',
 				substr($text,$ptr),$match)) {
 				if (strlen($tmp))
-					$node[]=$tmp;
+					array_push($node, $tmp);
 				// Element node
 				if ($match[1]) {
 					// Find matching start tag
@@ -302,7 +302,7 @@ class Template extends Preview {
 							$match[3],$attr,PREG_SET_ORDER);
 						foreach ($attr as $kv)
 							if (isset($kv[4]))
-								$node['@attrib'][]=$kv[4];
+								array_push($node['@attrib'], $kv[4]);
 							else
 								$node['@attrib'][$kv[1]]=
 									(empty($kv[2])?
@@ -324,7 +324,7 @@ class Template extends Preview {
 			}
 		if (strlen($tmp))
 			// Append trailing text
-			$node[]=$tmp;
+			array_push($node, $tmp);
 		// Break references
 		unset($node);
 		unset($stack);

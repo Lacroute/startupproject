@@ -271,7 +271,7 @@ class Web extends Prefab {
 			// Callback for response headers
 			function($curl,$line) use(&$headers) {
 				if ($trim=trim($line))
-					$headers[]=$trim;
+					array_push($headers, $trim);
 				return strlen($line);
 			}
 		);
@@ -679,7 +679,7 @@ class Web extends Prefab {
 				foreach ($list as $ns=>$uri)
 					foreach ($item->children($uri) as $key=>$val)
 						$fields[$ns.($ns?':':'').$key]=(string)$val;
-				$out['feed'][]=$fields;
+				array_push($out['feed'], $fields);
 			}
 		}
 		else

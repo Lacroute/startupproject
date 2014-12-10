@@ -855,8 +855,8 @@ class Base extends Prefab {
 					$country=@constant('ISO::CC_'.strtolower($parts[1])))
 					$locale.='-'.$country;
 			}
-			$locales[]=$locale;
-			$locales[]=$locale.'.'.ini_get('default_charset');
+			array_push($locales, $locale);
+			array_push($locales, $locale.'.'.ini_get('default_charset'));
 		}
 		setlocale(LC_ALL,str_replace('-','_',$locales));
 		return implode(',',$this->languages);
@@ -1402,7 +1402,7 @@ class Base extends Prefab {
 	function chain($funcs,$args=NULL) {
 		$out=array();
 		foreach (is_array($funcs)?$funcs:$this->split($funcs) as $func)
-			$out[]=$this->call($func,$args);
+			array_push($out, $this->call($func,$args));
 		return $out;
 	}
 
@@ -1588,7 +1588,8 @@ class Base extends Prefab {
 			$error && in_array($error['type'],
 			array(E_ERROR,E_PARSE,E_CORE_ERROR,E_COMPILE_ERROR)))
 			// Fatal error detected
-			$this->error(500,sprintf(self::E_Fatal,$error['message']));
+			var_dump($error);
+			$this->error(500,sprintf(self::E_Fatal, $error['message']));
 	}
 
 	//! Prohibit cloning

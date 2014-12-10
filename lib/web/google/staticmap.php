@@ -33,7 +33,7 @@ class StaticMap {
 	*	@param $args array
 	**/
 	function __call($func,array $args) {
-		$this->query[]=array($func,$args[0]);
+		array_push($this->query, array($func,$args[0]));
 		return $this;
 	}
 
