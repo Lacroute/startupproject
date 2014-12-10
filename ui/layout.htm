@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="<?php echo $ENCODING; ?>" />
-		<title>Powered by <?php echo $PACKAGE; ?></title>
-		<base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
-		<link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css" />
-		<!-- <link rel="stylesheet" href="ui/css/base.css" type="text/css" />
-		<link rel="stylesheet" href="ui/css/theme.css" type="text/css" /> -->
-		<link rel="stylesheet" href="ui/css/old.css" type="text/css" />
-	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css' />
-	</head>
-	<body id="page-top" class="index">
-		<check if="{{@success}}">
-		<p class="bg-success">Votre formulaire a bien été sauvegardé !</p>
-		</check>
-		<include href="main.htm" />
-	</body>
+    <head>
+        <meta charset="<?php echo $ENCODING; ?>" />
+        <title>Powered by <?php echo $PACKAGE; ?></title>
+        <base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
+        <link rel="stylesheet" href="vendor/twbs/bootstrap/dist/css/bootstrap.css" type="text/css" />
+        <!-- <link rel="stylesheet" href="ui/css/base.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/theme.css" type="text/css" /> -->
+        <link rel="stylesheet" href="ui/css/old.css" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css' />
+    </head>
+    <body id="page-top" class="index">
+        <check if="{{@success}}">
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                Votre inscription a bien été prise en compte
+            </div>
+        </check>
+        <include href="main.htm" />
+    </body>
 
-	<script src="/vendor/modernizr/modernizr.js"></script>
+    <script src="/vendor/modernizr/modernizr.js"></script>
 
-	<script src="/vendor/jquery/jquery.js"></script>
-	<script src="/vendor/jquery-validation/dist/jquery.validate.js"></script>
-	<script src="/vendor/jquery-validation/dist/additional-methods.js"></script>
+    <script src="/vendor/jquery/jquery.js"></script>
+    <script src="/vendor/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/vendor/jquery-validation/dist/additional-methods.js"></script>
 
-	<script src="/vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.js"></script>
 
-	<script src="/minify/vendor?&files=jquery-validation/dist/jquery.validate.js,jquery-validation/dist/additional-methods.js&vendor=true" type="text/javascript"></script>
+    <script src="/minify/vendor?&files=jquery-validation/dist/jquery.validate.js,jquery-validation/dist/additional-methods.js&vendor=true" type="text/javascript"></script>
 
-	<script src="/ui/js/agency.js"></script>
-	<!-- <script src="/minify/js?&files=agency.js" type="text/javascript"></script> -->
+    <script src="/ui/js/agency.js"></script>
+    <!-- <script src="/minify/js?&files=agency.js" type="text/javascript"></script> -->
 
 </html>

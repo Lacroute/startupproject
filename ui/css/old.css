@@ -1140,3 +1140,10 @@ body {
     margin-bottom:20px;
     padding-top:8px;
 }
+
+.alert{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
